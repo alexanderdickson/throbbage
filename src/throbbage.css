@@ -1,0 +1,12 @@
+.throbbage-container {
+    width: 40px;
+    height: 40px;
+    margin: 60px;
+}
+.throbbage-container > span {
+    width: 5px;
+    height: 5px;
+    background: #000;
+    opacity: 0.4;
+    border-radius: 10px;
+}
