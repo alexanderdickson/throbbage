@@ -4,12 +4,18 @@
 		  <link rel="stylesheet" type="text/css" href="../src/throbbage.css"/>
 	</head>
 	<body>
+		<div id="container"></div>
+		<button type="button" id="play">Play</button>
+ 		<button type="button" id="pause">Pause</button>
 		<script src="../src/throbbage.js"></script>
 		<script>
-
-			var t = throbbage(document.body);
-
-			t.play();
+			var t = throbbage(document.getElementById("container"), 1000);
+			document.body.addEventListener("click", function(event) {
+				if (event.target.tagName != "BUTTON") {
+					return;
+				}
+				t[event.target.id]();
+			});
 		</script>
 	</body>
 </html>

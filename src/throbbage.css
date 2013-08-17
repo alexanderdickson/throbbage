@@ -1,12 +1,11 @@
 .throbbage-container {
     width: 40px;
     height: 40px;
-    margin: 60px;
+    border: 1px solid #ccc;
 }
-.throbbage-container > span {
-    width: 5px;
-    height: 5px;
-    background: #000;
-    opacity: 0.4;
-    border-radius: 10px;
+.throbbage-container b {
+    width: 8px;
+    height: 8px;
+    background: #999;
+    border-radius: 8px;
 }
